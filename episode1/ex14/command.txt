@@ -1,0 +1,3 @@
+touch confidentiel.txt
+sudo chown apprenant1:apprenant1 confidentiel.txt
+sudo chmod 600 confidentiel.txt
