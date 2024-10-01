@@ -1,0 +1,13 @@
+[Unit]
+Description=Service FindMe - Détecte et supprime les fichiers FindMe.txt
+After=network.target
+
+[Service]
+Type=simple
+User=root
+ExecStart=/usr/local/bin/findme.sh
+Restart=always
+RestartSec=60
+
+[Install]
+WantedBy=multi-user.target
